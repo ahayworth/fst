@@ -130,7 +130,7 @@ impl<W: io::Write> Builder<W> {
         Ok(Builder {
             wtr,
             unfinished: UnfinishedNodes::new(),
-            registry: Registry::new(100_000, 2),
+            registry: Registry::new(1_000_000, 2),
             last: None,
             last_addr: NONE_ADDRESS,
             len: 0,
